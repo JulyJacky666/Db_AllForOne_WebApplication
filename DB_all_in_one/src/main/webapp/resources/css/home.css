@@ -1,0 +1,984 @@
+@media screen and (min-width: 992px) {
+
+#createTable {
+	align: center;
+	width: 80%;
+	
+}	
+	
+* {
+	margin: 0; 
+}
+
+html, body {
+	height: 100%;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0,0,0,.5);
+	z-index: 99;
+}
+
+.sect {
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.subSection {
+	height: 50%;
+	width: 100%;
+	background-color: #fffff6;
+}
+
+
+.sectOne {
+	background: url("../img/beach.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.sectTwo {
+	background: url("../img/house.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.sectThree {
+	background: url("../img/sea.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.sectFour {
+	background: url("../img/tree.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.sectFive {
+	background: url("../img/chair.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+nav.myNav a{
+	text-decoration: none;
+	color: #FFF;
+	margin-right: 20px;
+	line-height: 50px;
+	float: right;
+}
+
+div.hoverpart a:hover{
+	background-color: #b9b9b9;
+	border-radius: 10px;
+	padding: 0px 1%;
+}
+
+nav button {
+	border: 0px;
+	background-color: rgba(0,0,0,0);
+	height: 50px;
+	float: left;
+}
+
+nav span.caret {
+	border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    margin-top: 23px;
+    margin-left: 5px;
+}
+
+nav span {
+	text-decoration: none;
+	color: #FFF;
+	margin-left: 20px;
+	line-height: 50px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 30px;
+	float: left;
+}
+
+div.clear {
+	clear: both;
+}
+
+#messageBoxSec {
+	height: 80%;
+	width: 100%;
+	overflow: scroll;
+	padding-top: 2%;
+	padding-left: 5%;
+}
+
+img.messagehead {
+	float: left;
+	margin: 1% 2% 1% 5%;
+	width: 5%;
+	height: 5%;
+	border-radius: 30px;
+}
+
+
+div.messageFrom span{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
+div.messageContent span {
+	margin-left: 2%;
+}
+
+div.messageDate {
+	float: right;
+	margin-right: 5%;
+	margin-top: -3%;
+	margin-bottom: 3%;
+}
+
+div.messageID {
+	float: right;
+	margin-right: 5%;
+	margin-top: -3%;
+	margin-bottom: 3%;
+}
+
+div.reply {
+	float: right;
+	margin-right: 5%;
+	margin-top: -5%;
+}
+
+div.reply img {
+	width: 50%;
+	height: 50%;
+}
+
+div.perperson {
+	width: 90%;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+div.perperson:hover {
+	background-color: #a8e4f0;
+}
+
+div.checkbox {
+	float: right;
+	margin-right: 10%;	
+	margin-top: -3%;
+	margin-bottom: 3%;
+}
+
+#messageInfo {
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+#deleteBtn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #a8e4f0;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  width: 30%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#deleteBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#deleteBtn span:after {
+  content: ">>";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#deleteBtn:hover span {
+  padding-right: 25px;
+}
+
+#deleteBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+div.beginToContact {
+	padding-top: 20%;
+	/*padding-left: 30%;*/
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	display: none;
+}
+
+div.enjoy {
+	padding-top: 20%;
+	/*padding-left: 30%;*/
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	display: none;
+}
+
+div.lookupByNum {
+	padding-top: 20%;
+	/*padding-left: 30%;*/
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	display: none;
+}
+
+div.lookupByName {
+	padding-top: 20%;
+	/*padding-left: 30%;*/
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	display: none;
+}
+
+div.quickSearch {
+	padding-top: 20%;
+	/*padding-left: 30%;*/
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	display: none;
+}
+
+
+
+div.info {
+	margin-left: 5%;
+	margin-top: 5%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold; 
+}
+
+div.seeProfile {
+	width: 90%;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+div.seeProfile input {
+	margin: 5%;
+}
+
+
+div#searchSec {
+	text-align: center;
+	padding-top: 2%;
+	overflow: scroll;
+}
+
+ul.dropdown-menu {
+	margin-top: 50px;
+	margin-left: 70px;
+	background-color: rgba(0,0,0,.5);
+}
+
+ul.dropdown-menu li a{
+	color: #fff;
+}
+
+#errorMessage, #errorMessageId, #errormessage {
+	color: red;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+#errorMessage, #errorMessageId, #errormessage {
+	color: red;
+}	
+	
+* {
+	margin: 0; 
+}
+
+html, body {
+	height: 100%;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0,0,0,.5);
+	z-index: 99;
+}
+
+.sect {
+	height: 60%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.subSection {
+	height: 50%;
+	background-color: #fffff6;
+}
+
+
+.sectOne {
+	background: url("../img/beach.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.sectTwo {
+	background: url("../img/house.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.sectThree {
+	background: url("../img/sea.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.sectFour {
+	background: url("../img/tree.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.sectFive {
+	background: url("../img/chair.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+#search, #lookuser, #looknum {
+	display: none;
+}
+
+
+
+
+nav.myNav a{
+	text-decoration: none;
+	color: #FFF;
+	margin-right: 20px;
+	line-height: 50px;
+	float: right;
+}
+
+div.hoverpart a:hover{
+	background-color: #b9b9b9;
+	border-radius: 10px;
+	padding: 0px 1%;
+}
+
+nav button {
+	border: 0px;
+	background-color: rgba(0,0,0,0);
+	height: 50px;
+	float: left;
+}
+
+nav span.caret {
+	border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    margin-top: 23px;
+    margin-left: 5px;
+}
+
+nav span {
+	text-decoration: none;
+	color: #FFF;
+	margin-left: 20px;
+	line-height: 50px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 30px;
+	float: left;
+}
+
+div.clear {
+	clear: both;
+}
+
+#messageBoxSec {
+	height: 70%;
+	width: 100%;
+	overflow: scroll;
+	padding-top: 2%;
+	padding-left: 5%;
+}
+
+img.messagehead {
+	float: left;
+	margin: 1% 2% 1% 5%;
+	width: 5%;
+	height: 5%;
+	border-radius: 30px;
+}
+
+
+div.messageFrom span{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
+div.messageContent span {
+	margin-left: 2%;
+}
+
+div.messageDate {
+	float: right;
+	margin-right: 5%;
+	margin-top: -3%;
+	margin-bottom: 3%;
+}
+
+div.messageID {
+	float: right;
+	margin-right: 5%;
+	margin-top: -3%;
+	margin-bottom: 3%;
+}
+
+div.reply {
+	float: right;
+	margin-right: 5%;
+	margin-top: -5%;
+}
+
+div.reply img {
+	width: 50%;
+	height: 50%;
+}
+
+div.perperson {
+	width: 90%;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+div.perperson:hover {
+	background-color: #a8e4f0;
+}
+
+div.checkbox {
+	float: right;
+	margin-right: 10%;	
+	margin-top: -3%;
+	margin-bottom: 3%;
+}
+
+#messageInfo {
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+#deleteBtn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #a8e4f0;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  width: 30%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#deleteBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#deleteBtn span:after {
+  content: ">>";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#deleteBtn:hover span {
+  padding-right: 25px;
+}
+
+#deleteBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+div.beginToContact {
+	padding-top: 20%;
+	/*padding-left: 30%;*/
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	display: none;
+}
+
+div.enjoy {
+	padding-top: 20%;
+	/*padding-left: 30%;*/
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	display: none;
+}
+
+div.lookupByNum {
+	padding-top: 20%;
+	/*padding-left: 30%;*/
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	display: none;
+}
+
+div.lookupByName {
+	padding-top: 20%;
+	/*padding-left: 30%;*/
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	display: none;
+}
+
+div.quickSearch {
+	padding-top: 20%;
+	/*padding-left: 30%;*/
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	display: none;
+}
+
+
+
+div.info {
+	margin-left: 5%;
+	margin-top: 5%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold; 
+}
+
+div.seeProfile {
+	width: 90%;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+div.seeProfile input {
+	margin: 5%;
+}
+
+
+div#searchSec {
+	text-align: center;
+	padding-top: 2%;
+}
+
+ul.dropdown-menu {
+	margin-top: 50px;
+	margin-left: 70px;
+	background-color: rgba(0,0,0,.5);
+}
+
+ul.dropdown-menu li a{
+	color: #fff;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+#errorMessage, #errorMessageId, #errormessage {
+	color: red;
+}	
+	
+* {
+	margin: 0; 
+}
+
+html, body {
+	height: 100%;
+	width: 768px;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0,0,0,.5);
+	z-index: 99;
+}
+
+
+#search, #lookuser, #looknum, #messageBox {
+	display: none;
+}
+
+.sect {
+	height: 30%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.subSection {
+	height: 50%;
+	background-color: #fffff6;
+	overflow: scroll;
+}
+
+
+.sectOne {
+	background: url("../img/beach.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.sectTwo {
+	background: url("../img/house.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.sectThree {
+	background: url("../img/sea.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.sectFour {
+	background: url("../img/tree.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.sectFive {
+	background: url("../img/chair.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+nav.myNav a{
+	text-decoration: none;
+	color: #FFF;
+	margin-right: 20px;
+	line-height: 50px;
+	float: right;
+}
+
+div.hoverpart a:hover{
+	background-color: #b9b9b9;
+	border-radius: 10px;
+	padding: 0px 1%;
+}
+
+nav button {
+	border: 0px;
+	background-color: rgba(0,0,0,0);
+	height: 50px;
+	float: left;
+}
+
+nav span.caret {
+	border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    margin-top: 23px;
+    margin-left: 5px;
+}
+
+nav span {
+	text-decoration: none;
+	color: #FFF;
+	margin-left: 20px;
+	line-height: 50px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 30px;
+	float: left;
+}
+
+div.clear {
+	clear: both;
+}
+
+#messageBoxSec {
+	height: 70%;
+	width: 100%;
+	overflow: scroll;
+	padding-top: 2%;
+	padding-left: 5%;
+}
+
+img.messagehead {
+	float: left;
+	margin: 1% 2% 1% 5%;
+	width: 5%;
+	height: 5%;
+	border-radius: 30px;
+}
+
+
+div.messageFrom span{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
+div.messageContent span {
+	margin-left: 2%;
+}
+
+div.messageDate {
+	float: right;
+	margin-right: 5%;
+	margin-top: -3%;
+	margin-bottom: 3%;
+}
+
+div.messageID {
+	float: right;
+	margin-right: 5%;
+	margin-top: -3%;
+	margin-bottom: 3%;
+}
+
+div.reply {
+	float: right;
+	margin-right: 5%;
+	margin-top: -5%;
+}
+
+div.reply img {
+	width: 50%;
+	height: 50%;
+}
+
+div.perperson {
+	width: 90%;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+div.perperson:hover {
+	background-color: #a8e4f0;
+}
+
+div.checkbox {
+	float: right;
+	margin-right: 10%;	
+	margin-top: -3%;
+	margin-bottom: 3%;
+}
+
+#messageInfo {
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+#deleteBtn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #a8e4f0;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  width: 30%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#deleteBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#deleteBtn span:after {
+  content: ">>";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#deleteBtn:hover span {
+  padding-right: 25px;
+}
+
+#deleteBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+div.beginToContact {
+	padding-top: 10%;
+	/*padding-left: 30%;*/
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	display: none;
+}
+
+div.enjoy {
+	padding-top: 10%;
+	/*padding-left: 30%;*/
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	display: none;
+}
+
+div.lookupByNum {
+	padding-top: 10%;
+	/*padding-left: 30%;*/
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	display: none;
+}
+
+div.lookupByName {
+	padding-top: 10%;
+	/*padding-left: 30%;*/
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	display: none;
+}
+
+div.quickSearch {
+	padding-top: 10%;
+	/*padding-left: 30%;*/
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	display: none;
+}
+
+
+
+div.info {
+	margin-left: 5%;
+	margin-top: 5%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold; 
+}
+
+div.seeProfile {
+	width: 90%;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+div.seeProfile input {
+	margin: 5%;
+}
+
+
+div#searchSec {
+	text-align: center;
+	padding-top: 2%;
+}
+
+ul.dropdown-menu {
+	margin-top: 50px;
+	margin-left: 70px;
+	background-color: rgba(0,0,0,.5);
+}
+
+ul.dropdown-menu li a{
+	color: #fff;
+}
+
+
+}
